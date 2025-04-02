@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EBpPcg9nnrNyE7BKNsgVJTylUH0rzUT6w7wCqqEUkDA=",
+  "Source": "firstloadbalancer",
+  "BasePath": "_content/firstloadbalancer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

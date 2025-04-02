@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tM72K+fSH8LxCgNntqhxydcTdDe5aEV7n2j0npboFLo=",
+  "Source": "secondLoadBalancer",
+  "BasePath": "_content/secondLoadBalancer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
