@@ -50,8 +50,8 @@ def get_answer_from_model(client: LLMClientService, docpaths: List[str], chunks:
     
     print(f"Adding {len(fulldocs)} documents with {len(ids)} ids to the collection.")
     
+    # Add the documents to the collection
     try:
-        # Add the documents to the collection
         collection.add(
             documents=fulldocs,
             ids=ids
@@ -59,7 +59,6 @@ def get_answer_from_model(client: LLMClientService, docpaths: List[str], chunks:
     except Exception as e:
         raise RuntimeError(f"Error adding documents to collection: {e}")
 
-    # Continue with the rest of the logic...
     # preprocessing_using_chat = f"""
     # Given the following chat history,
     # edit the user question to provide any information from the chat history that would be needed to make the last user question make sense out of context:
@@ -91,13 +90,13 @@ def get_answer_from_model(client: LLMClientService, docpaths: List[str], chunks:
     for keywd in keywordList:
         results=collection.query(
         query_texts=[keywd],
-        n_results=numofresults # how many results to return
+        n_results=numofresults 
         )
         for doc in results["documents"][0]:
             context+=doc+"\n"
     results = collection.query(
         query_texts=[question],
-        n_results=numofresults # how many results to return
+        n_results=numofresults 
     )
     
     tmp =""
